@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INACAPLudi - Club de Juegos de Mesa y Rol</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body class="w3-grey">
+    <div id="login-section" class="w3-container">
+        <h2>Login</h2>
+        <input type="text" id="nickname" placeholder="Ingresa tu nickname">
+        <button class="login-btn" onclick="login()">Login</button>
+    </div>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/Inacap.png" alt="INACAPLudi Logo" class="logo">
+            <div class="header-content">
+                <h1>INACAPLudi</h1>
+                <p class="club-description">Club oficial de juegos de mesa y de rol de INACAP</p>
+                <p class="login-message">Conéctate con tu nickname para realizar compras e interactuar con el carrito.</p>
+                <form id="loginForm">
+                    <input type="text" id="nickname" placeholder="Nickname" required>
+                    <button type="submit">Conectar</button>
+                </form>
+            </div>
+            <div class="header-buttons">
+                <p id="welcomeMessage" style="display: none;"></p>
+                <button id="logoutButton" style="display: none;">Desconectarse</button>
+                <button id="cartButton" style="display: none;">Carrito (<span id="cartItemCount">0</span>)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de Productos</h2>
+            <div id="catalogo" class="w3-container w3-padding-32 w3-white" style="display:none;"></div>        </section>
+    </main>
+
+    <footer>
+        <p>Somos un espacio inclusivo y diverso donde todos son bienvenidos a sumergirse en la emoción y la camaradería que los juegos de mesa y de rol pueden ofrecer.</p>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Carrito de Compras</h2>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Productos del carrito se insertarán aquí -->
+            </div>
+            <div class="modal-footer">
+                <button id="closeCartButton">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/prueba/componentes/header.js"></script>
+    <script src="/prueba/componentes/footer.js"></script>
+    <script src="/prueba/componentes/layout.js"></script>
+    <script src="/prueba/pages/index.js"></script>
+    <script src="/prueba/componentes/app.js"></script>
+    <script src="/prueba/pages/admin/usuarios.js"></script> 
+    <script src="/prueba/styles/global.css"></script>
+
+</body>
+</html>

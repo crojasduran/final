@@ -1,0 +1,17 @@
+{
+  "name": "inacap-ludi",
+  "version": "1.0.0",
+  "description": "Aplicación web para venta de juegos de mesa.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "live-server public"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "author": "",
+  "license": "ISC"
+}
